@@ -46,11 +46,15 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         quote = input('enter quote to explode')
         technique = input('enter technique to explore')
         idea_it_gives_the_reader = input('idea it gives the reader')
+        zoom_in_word = input('enter word to zoom in on')
+        wordclass = input('enter word class of word')
+        idea = input('what idea it constructs')
 
 
 
         petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
-\'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader} """)
+\'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
+construct\'s the {idea} feeling in the reader\'s head""")
 
         file = open('paragraphs.txt', 'a')
         file.write(petal)
