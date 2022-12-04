@@ -45,10 +45,12 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         how_character_is_presented = input('how the character is presented')
         quote = input('enter quote to explode')
         technique = input('enter technique to explore')
-        
+        idea_it_gives_the_reader = input('idea it gives the reader')
 
-        petal = (f"""In the text {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
-\'{quote}\'. The use of a {technique}""")
+
+
+        petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
+\'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader} """)
 
         file = open('paragraphs.txt', 'a')
         file.write(petal)
