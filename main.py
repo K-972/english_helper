@@ -49,14 +49,26 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         zoom_in_word = input('enter word to zoom in on')
         wordclass = input('enter word class of word')
         idea = input('what feeling it constructs in the readers head')
+        context_option = input('do you want to input some context y/n')
+        if context_option == 'y':
+            context_prompt = 'This links to the time period as '
+            context = input('this links to the time period as ....   or type n to exit')
+            if context == 'n':
+                pass
+            else:
+                petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
+                \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
+                construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
+                {context_prompt}{context}""")
+        else:
+            petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
+            \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
+            construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
+            """)
 
 
 
 
-        petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
-\'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
-construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text 
-""")
 
         file = open('paragraphs.txt', 'a')
         file.write(petal)
