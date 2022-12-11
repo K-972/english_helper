@@ -11,12 +11,14 @@ def petal_function():
 enter number of what you want
   1: comparing ideas sources a and b
   2: how a character is presented
-  3: how a them is presented in a poem""")
+  3: how a them is presented in a poem
+  
+  >> """)
 
     if type_of_petal == '1':
         print('source A\n')
-        idea = input('enter idea to explore')
-        technique = input('enter technique to explore')
+        idea = input('In source A the idea of ...')
+        technique = input('is presented through the use of ...')
         quote = input('enter quote to explode')
         zoom_in_word = input('enter word to zoom in on')
         wordclass = input('enter word class of word')
@@ -37,8 +39,8 @@ the {wordclass} \'{zoom_in_word}\' create\'s a {feeling} feeling in the reader\'
 shown in the quote \'{quote_2}\'. the {wordclass_2} \'{zoom_in_word_2}\' create\'s a {image_constructed} image in the reader\'s 
 head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""")
 
-        file = open('paragraphs.txt', 'a')
-        file.write(petal)
+        with open('paragraphs.txt') as f:
+            f.write(petal)
 
     if type_of_petal == '2':
         print('character\n')
@@ -60,19 +62,15 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
                 petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
                 \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
                 construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
-                {context_prompt}{context}""")
+                {context_prompt}{context} and ultimately shows how {character_name} is prestentd as {how_character_is_presented} in the text.""")
         else:
             petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
             \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
             construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
             """)
 
-
-
-
-
-        file = open('paragraphs.txt', 'a')
-        file.write(petal)
+        with open('paragraphs.txt') as f:
+            f.write(petal)
 
 
 
