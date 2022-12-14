@@ -93,20 +93,31 @@ print('booted successfully')
 #################
 ### main menu ###
 #################
-decision = input("petal or petaletal")
-decision = decision.lower()
 
+main_decision_made = False
+while main_decision_made == False:
+    main_menu()
 
-if decision == 'petal':
-    petal_function()
-elif decision == 'petaletal':
-    petaletal_function()
-elif decision == 'peel':
-    peel_function()
-elif decision == 'peecee':
-    peecee_function()
-else:
-    quit()
+def main_menu(main_decision_made):
+    main_decision = input("petal or petaletal or peel or peecee or peeeel >> ")
+    if decision == 'petal':
+        main_decision_made == True
+        petal_function()
+    elif decision == 'petaletal':
+        main_decision_made == True
+        petaletal_function()
+    elif decision == 'peel':
+        main_decision_made == True
+        peel_function()
+    elif decision == 'peecee':
+        main_decision_made == True
+        peecee_function()
+    elif decision == 'peeeel':
+        main_decision_made == True
+        peeeel_function()
+    else:
+        pass
+
 
 
 
