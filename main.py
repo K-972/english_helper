@@ -117,7 +117,7 @@ print('booted successfully')
 
 main_decision_made = False
 while main_decision_made == False:
-    main_menu()
+    main_menu(main_decision_made)
 
 
 
