@@ -6,6 +6,27 @@ print(os.getcwd())
 ### PETAL FUNCTION ###
 ######################
 
+def main_menu(main_decision_made):
+    main_decision = input("petal or petaletal or peel or peecee or peeeel >> ")
+    if decision == 'petal':
+        main_decision_made == True
+        petal_function()
+    elif decision == 'petaletal':
+        main_decision_made == True
+        petaletal_function()
+    elif decision == 'peel':
+        main_decision_made == True
+        peel_function()
+    elif decision == 'peecee':
+        main_decision_made == True
+        peecee_function()
+    elif decision == 'peeeel':
+        main_decision_made == True
+        peeeel_function()
+    else:
+        pass
+
+
 def petal_function():
     type_of_petal = input("""
 enter number of what you want
@@ -98,25 +119,6 @@ main_decision_made = False
 while main_decision_made == False:
     main_menu()
 
-def main_menu(main_decision_made):
-    main_decision = input("petal or petaletal or peel or peecee or peeeel >> ")
-    if decision == 'petal':
-        main_decision_made == True
-        petal_function()
-    elif decision == 'petaletal':
-        main_decision_made == True
-        petaletal_function()
-    elif decision == 'peel':
-        main_decision_made == True
-        peel_function()
-    elif decision == 'peecee':
-        main_decision_made == True
-        peecee_function()
-    elif decision == 'peeeel':
-        main_decision_made == True
-        peeeel_function()
-    else:
-        pass
 
 
 
