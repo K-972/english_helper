@@ -26,6 +26,9 @@ def main_menu(main_decision_made):
     elif main_decision == 'e':
         quit()
     else:
+        wrong_input_count = 0
+        wrong_input_count = wrong_input_count + 1
+        return wrong_input_count
         pass
 
 
@@ -119,6 +122,7 @@ print('booted successfully')
 
 main_decision_made = False
 while main_decision_made == False:
+
     main_menu(main_decision_made)
 
 
