@@ -7,22 +7,24 @@ print(os.getcwd())
 ######################
 
 def main_menu(main_decision_made):
-    main_decision = input("petal or petaletal or peel or peecee or peeeel >> ")
-    if decision == 'petal':
+    main_decision = input("petal or petaletal or peel or peecee or peeeel (e to exit) >> ")
+    if main_decision == 'petal':
         main_decision_made == True
         petal_function()
-    elif decision == 'petaletal':
+    elif main_decision == 'petaletal':
         main_decision_made == True
         petaletal_function()
-    elif decision == 'peel':
+    elif main_decision == 'peel':
         main_decision_made == True
         peel_function()
-    elif decision == 'peecee':
+    elif main_decision == 'peecee':
         main_decision_made == True
         peecee_function()
-    elif decision == 'peeeel':
+    elif main_decision == 'peeeel':
         main_decision_made == True
         peeeel_function()
+    elif main_decision == 'e':
+        quit()
     else:
         pass
 
