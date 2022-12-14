@@ -1,4 +1,7 @@
 import time
+
+
+# i dont know what this does or why it is here but it stays because everytime i remove it my programme breaks
 import os
 print(os.getcwd())
 
