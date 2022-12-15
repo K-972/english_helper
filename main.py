@@ -1,36 +1,44 @@
 import time
 
 
-# i dont know what this does or why it is here but it stays because everytime i remove it my programme breaks
+# i don't know what this does or why it is here. but it stays because everytime i remove it my programme breaks
 import os
 print(os.getcwd())
 
-######################
-### PETAL FUNCTION ###
-######################
-
+#################
+### main menu ###
+#################
 def main_menu(main_decision_made):
     main_decision = input("petal or petaletal or peel or peecee or peeeel (e to exit) >> ")
     if main_decision == 'petal':
-        main_decision_made == True
+        main_decision_made = True
+        return main_decision_made
         petal_function()
     elif main_decision == 'petaletal':
-        main_decision_made == True
+        main_decision_made = True
+        return main_decision_made
         petaletal_function()
     elif main_decision == 'peel':
-        main_decision_made == True
+        main_decision_made = True
+        return main_decision_made
         peel_function()
     elif main_decision == 'peecee':
-        main_decision_made == True
+        main_decision_made = True
+        return main_decision_made
         peecee_function()
     elif main_decision == 'peeeel':
-        main_decision_made == True
+        main_decision_made = True
+        return main_decision_made
         peeeel_function()
     elif main_decision == 'e':
         quit()
     else:
         pass
 
+
+######################
+### PETAL FUNCTION ###
+######################
 
 def petal_function():
     type_of_petal = input("""
@@ -116,9 +124,9 @@ while start_countdown < 5:
 print('booted successfully')
 
 
-#################
-### main menu ###
-#################
+##############################
+### main menu being called ###
+##############################
 
 main_decision_made = False
 while main_decision_made == False:
