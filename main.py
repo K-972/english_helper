@@ -13,23 +13,18 @@ def main_menu(main_decision_made):
     main_decision = input("petal or petaletal or peel or peecee or peeeel (e to exit) >> ")
     if main_decision == 'petal':
         main_decision_made = True
-        return main_decision_made
         petal_function()
     elif main_decision == 'petaletal':
         main_decision_made = True
-        return main_decision_made
         petaletal_function()
     elif main_decision == 'peel':
         main_decision_made = True
-        return main_decision_made
         peel_function()
     elif main_decision == 'peecee':
         main_decision_made = True
-        return main_decision_made
         peecee_function()
     elif main_decision == 'peeeel':
         main_decision_made = True
-        return main_decision_made
         peeeel_function()
     elif main_decision == 'e':
         quit()
@@ -46,7 +41,7 @@ def petal_function():
 enter number of what you want
   1: comparing ideas sources a and b
   2: how a character is presented
-  3: how a them is presented in a poem
+  3: how a theme is presented in a poem
   
   >> """)
 
@@ -106,6 +101,17 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
 
         with open('paragraphs.txt') as f:
             f.write(petal)
+    if type_of_petal == '3':
+        print('How a theme is presaented in poetry \n')
+
+        name_of_poem = input('enter the name of the poem ...')
+        theme_presented = input('enter the theme shown ...')
+        theme_shown_through = input(f'how is {theme_shown_through} shown')
+
+
+
+        petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} """)
+
 
 
 
