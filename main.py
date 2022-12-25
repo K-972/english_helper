@@ -10,7 +10,7 @@ print(os.getcwd())
 ### main menu ###
 #################
 def main_menu(main_decision_made):
-    main_decision = input("petal or petaletal or peel or peecee or peeeel (e to exit) >> ")
+    main_decision = input("\npetal or petaletal or peel or peecee or peeeel (e to exit) >> ")
     if main_decision == 'petal':
         main_decision_made = True
         petal_function()
@@ -107,10 +107,12 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         name_of_poem = input('enter the name of the poem ...')
         theme_presented = input('enter the theme shown ...')
         theme_shown_through = input(f'how is {theme_shown_through} shown')
+        quote = input('enter quote you want to explode ...')
 
 
 
-        petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} """)
+        petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote 
+        \'{quote}\'. """)
 
 
 
@@ -119,7 +121,7 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
 ### WELCOME MESSEDGE ###
 ########################
 
-print('welcome to English-Helper \nBy K972')
+print('\nwelcome to English-Helper \nBy K972')
 time.sleep(3)
 start_countdown_number = 5
 start_countdown = 0
@@ -128,7 +130,7 @@ while start_countdown < 5:
     print(f'ready in {start_countdown_number}')
     start_countdown_number = start_countdown_number - 1
     time.sleep(1)
-print('booted successfully')
+print('\nbooted successfully')
 
 
 ##############################
