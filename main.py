@@ -101,6 +101,8 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
 
         with open('paragraphs.txt') as f:
             f.write(petal)
+
+
     if type_of_petal == '3':
         print('How a theme is presaented in poetry \n')
 
@@ -108,11 +110,11 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         theme_presented = input('enter the theme shown ...')
         theme_shown_through = input(f'how is {theme_shown_through} shown')
         quote = input('enter quote you want to explode ...')
-
-
+        zoom_in_word = input('enter ther word you want to zoom in on ...')
+        wordclass = input('enter word class of word ...')
 
         petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote 
-        \'{quote}\'. """)
+        \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} in the reader\'s headh showing how.""")
 
 
 
