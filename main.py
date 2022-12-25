@@ -114,7 +114,8 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
         wordclass = input('enter word class of word ...')
 
         petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote 
-        \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} in the reader\'s headh showing how.""")
+        \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} that is presented in the reader\'s headh showing how {theme_presented}
+        is shown. """)
 
 
 
