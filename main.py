@@ -54,18 +54,18 @@ enter number of what you want
         print('source A\n')
         idea = input('In source A the idea of ...')
         technique = input('is presented through the use of ...')
-        quote = input('enter quote to explode')
-        zoom_in_word = input('enter word to zoom in on')
-        wordclass = input('enter word class of word')
-        feeling = input('enter feeling created in the readers head')
-        why_it_creates_the_feeling = input('why is the feeling created')
+        quote = input('this is evident through the quote ...')
+        zoom_in_word = input('enter ther word you want to zoom in on ...')
+        wordclass = input('enter word class of word ...')
+        feeling = input('enter feeling created in the readers head, because of the word ...')
+        why_it_creates_the_feeling = input('why is the feeling created ...')
         print('\nsource B\n')
-        technique_2 = input('enter another technique to explore')
-        quote_2 = input('enter another quote to explode')
-        zoom_in_word_2 = input('enter word to zoom in on')
-        wordclass_2 = input('enter word class of word')
-        image_constructed = input('enter image constructed in the readers head')
-        why_it_creates_the_feeling_2 = input('enter why is the feeling created')
+        technique_2 = input('enter another technique to explore ...')
+        quote_2 = input('enter another quote to explode ...')
+        zoom_in_word_2 = input('enter word to zoom in on ...')
+        wordclass_2 = input('enter word class of word ...')
+        image_constructed = input('enter image constructed in the readers head ...')
+        why_it_creates_the_feeling_2 = input('enter why is the feeling created ...')
 
 
         petal = (f"""In source A the idea of {idea} is presented through the use of {technique} this is evident in the quote \'{quote}\'.
@@ -79,15 +79,15 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
 
     if type_of_petal == '2':
         print('character\n')
-        character_name = input('enter character name')
-        how_character_is_presented = input('how the character is presented')
-        quote = input('enter quote to explode')
-        technique = input('enter technique to explore')
-        idea_it_gives_the_reader = input('idea it gives the reader')
-        zoom_in_word = input('enter word to zoom in on')
-        wordclass = input('enter word class of word')
-        idea = input('what feeling it constructs in the readers head')
-        context_option = input('do you want to input some context y/n')
+        character_name = input('enter character name ...')
+        how_character_is_presented = input('how the character is presented ...')
+        quote = input('enter quote to explode ...')
+        technique = input('enter technique to explore ...')
+        idea_it_gives_the_reader = input('idea it gives the reader ...')
+        zoom_in_word = input('enter word to zoom in on ...')
+        wordclass = input('enter word class of word ...')
+        idea = input('what feeling it constructs in the readers head ...')
+        context_option = input('do you want to input some context y/n >> ')
         if context_option == 'y':
             context_prompt = 'This links to the time period as '
             context = input('this links to the time period as ....   or type n to exit')
@@ -97,7 +97,7 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
                 petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
                 \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
                 construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
-                {context_prompt}{context} and ultimately shows how {character_name} is prestentd as {how_character_is_presented} in the text.""")
+                {context_prompt}{context} and ultimately shows how {character_name} is prestented as {how_character_is_presented} in the text.""")
         else:
             petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
             \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
