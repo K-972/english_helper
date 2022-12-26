@@ -63,13 +63,9 @@ enter number of what you want
         why_it_creates_the_feeling_2 = input('enter why is the feeling created ...')
 
 
-        petal = (f"""In source A the idea of {idea} is presented through the use of {technique} this is evident in the quote \'{quote}\'.
-the {wordclass} \'{zoom_in_word}\' create\'s a {feeling} feeling in the reader\'s head and presents the idea of {idea} because
-{why_it_creates_the_feeling}. However in source B the idea of {idea} is presented through the use of {technique_2} this is
-shown in the quote \'{quote_2}\'. the {wordclass_2} \'{zoom_in_word_2}\' create\'s a {image_constructed} image in the reader\'s 
-head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""")
+        petal = (f"In source A the idea of {idea} is presented through the use of {technique} this is evident in the quote \'{quote}\'. the {wordclass} \'{zoom_in_word}\' create\'s a {feeling} feeling in the reader\'s head and presents the idea of {idea} because {why_it_creates_the_feeling}. However in source B the idea of {idea} is presented through the use of {technique_2} this is shown in the quote \'{quote_2}\'. the {wordclass_2} \'{zoom_in_word_2}\' create\'s a {image_constructed} image in the reader\'s head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n")
 
-        with open('paragraphs.txt') as f:
+        with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
     if type_of_petal == '2':
@@ -89,17 +85,11 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
             if context == 'n':
                 pass
             else:
-                petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
-                \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
-                construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
-                {context_prompt}{context} and ultimately shows how {character_name} is prestented as {how_character_is_presented} in the text.""")
+                petal = (f"In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. {context_prompt}{context} and ultimately shows how {character_name} is prestented as {how_character_is_presented} in the text.")
         else:
-            petal = (f"""In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote 
-            \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'
-            construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. 
-            """)
+            petal = (f"In the text, {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\'. The use of a {technique} gives the reader the idea that {idea_it_gives_the_reader}. The {wordclass} \'{zoom_in_word}\'construct\'s the {idea} feeling in the reader\'s head. this reinforces the idea of how {character_name} is presented in the text. ")
 
-        with open('paragraphs.txt') as f:
+        with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
 
@@ -108,15 +98,17 @@ head and presents the idea of {idea} because {why_it_creates_the_feeling_2}.\n""
 
         name_of_poem = input('enter the name of the poem ...')
         theme_presented = input('enter the theme shown ...')
-        theme_shown_through = input(f'how is {theme_shown_through} shown')
+        theme_shown_through = input(f'how is {theme_presented} shown')
         quote = input('enter quote you want to explode ...')
         zoom_in_word = input('enter ther word you want to zoom in on ...')
         wordclass = input('enter word class of word ...')
 
-        petal = (f""""in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote 
-        \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} that is presented in the reader\'s headh showing how {theme_presented}
-        is shown. """)
+        petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} that is presented in the reader\'s headh showing how {theme_presented} is shown. ")
 
+
+
+        with open('paragraphs.txt', 'a') as f:
+            f.write(petal)
 
 
 
