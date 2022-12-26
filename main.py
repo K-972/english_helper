@@ -1,5 +1,6 @@
 #nothing to say just adding a comment to test pushing on my macbook
 import time
+import pyperclip
 
 
 # i don't know what this does or why it is here. but it stays because everytime i remove it my programme breaks
@@ -68,6 +69,12 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
+        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        if end_decision == 'e':
+            quit()
+        if end_decision == 'c':
+            pyperclip.copy(petal)
+
     if type_of_petal == '2':
         print('character\n')
         character_name = input('enter character name ...')
@@ -92,6 +99,12 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
+        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        if end_decision == 'e':
+            quit()
+        if end_decision == 'c':
+            pyperclip.copy(petal)
+
 
     if type_of_petal == '3':
         print('How a theme is presaented in poetry \n')
@@ -109,6 +122,12 @@ enter number of what you want
 
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
+
+        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        if end_decision == 'e':
+            quit()
+        if end_decision == 'c':
+            pyperclip.copy(petal)
 
 
 
