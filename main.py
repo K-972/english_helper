@@ -139,6 +139,39 @@ enter number of what you want
             quit()
         if end_decision == 'c':
             pyperclip.copy(petal)
+#####################
+### peel function ###
+#####################
+
+def peel_function():
+    type_of_peel = input("""
+enter number of what you want
+  1: how a character is presented
+  2: how a theme is shown
+  3: how a -- custom option -- is shown
+  
+  >> """)
+
+    if type_of_peel == '1':
+        print('source A\n')
+        what_the_character_is_in = input('is it a book poem or ... ')
+        character_name = input('enter character name ... ')
+        how_character_is_presented = input(f'{character_name} is presented as ... ')
+
+
+        petal = (f"in the {what_the_character_is_in} the character {character_name} is presented as {how_character_is_presented}")
+
+        with open('paragraphs.txt', 'a') as f:
+            f.write(petal)
+
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit >> ')
+        if end_decision == 'e':
+            quit()
+        if end_decision == 'c':
+            pyperclip.copy(petal)
+
+
+
 
 
 
