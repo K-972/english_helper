@@ -69,7 +69,7 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit >> ')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
@@ -77,18 +77,18 @@ enter number of what you want
 
     if type_of_petal == '2':
         print('character\n')
-        character_name = input('enter character name ...')
-        how_character_is_presented = input('how the character is presented ...')
-        quote = input('enter quote to explode ...')
-        technique = input('enter technique to explore ...')
-        idea_it_gives_the_reader = input('idea it gives the reader ...')
-        zoom_in_word = input('enter word to zoom in on ...')
-        wordclass = input('enter word class of word ...')
-        idea = input('what feeling it constructs in the readers head ...')
+        character_name = input('enter character name ... ')
+        how_character_is_presented = input('how the character is presented ... ')
+        quote = input('enter quote to explode ... ')
+        technique = input('enter technique to explore ... ')
+        idea_it_gives_the_reader = input('idea it gives the reader ... ')
+        zoom_in_word = input('enter word to zoom in on ... ')
+        wordclass = input('enter word class of word ... ')
+        idea = input('what feeling it constructs in the readers head ... ')
         context_option = input('do you want to input some context y/n >> ')
         if context_option == 'y':
             context_prompt = 'This links to the time period as '
-            context = input('this links to the time period as ....   or type n to exit')
+            context = input('this links to the time period as ....   or type n to exit >> ')
             if context == 'n':
                 pass
             else:
@@ -99,7 +99,7 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit >> ')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
@@ -121,7 +121,7 @@ enter number of what you want
         context_option = input('do you want to input some context y/n >> ')
         if context_option == 'y':
             context_prompt = 'This is contextually relevant as  '
-            context = input(f'{context_prompt}....   or type e to exit')
+            context = input(f'{context_prompt}....   or type e to exit ... ')
             if context == 'e':
                 pass
             else:
@@ -134,7 +134,7 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit >> ')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
