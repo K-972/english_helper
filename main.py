@@ -113,11 +113,21 @@ enter number of what you want
         theme_presented = input('enter the theme shown ... ')
         theme_shown_through = input(f'{theme_presented} is shown through a ... ')
         quote = input('enter quote you want to explode ... ')
+        what_the_quote_shows = input('this quote shows ... ')
         zoom_in_word = input('enter ther word you want to zoom in on ... ')
         wordclass = input('enter word class of word ... ')
-        what_it_relates_to = input('how does this theme get presented by the word ... ')
+        what_it_relates_to = input(f'this shows how {theme_presented} is presented as it has relations to ... ')
 
-        petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s how the theme of {theme_presented} is presented as it relates to {what_it_relates_to}")
+        context_option = input('do you want to input some context y/n >> ')
+        if context_option == 'y':
+            context_prompt = 'This is contextually relevant as  '
+            context = input(f'{context_prompt}....   or type e to exit')
+            if context == 'e':
+                pass
+            else:
+                 petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. This quote shows {what_the_quote_shows}. The {wordclass} \'{zoom_in_word}\' construct\'s how the theme of {theme_presented} is presented as it relates to {what_it_relates_to}. {context_prompt}{context}")
+        else:
+            petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. This quote shows {what_the_quote_shows}. The {wordclass} \'{zoom_in_word}\' construct\'s how the theme of {theme_presented} is presented as it relates to {what_it_relates_to}")
 
 
 
