@@ -69,7 +69,7 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
@@ -99,7 +99,7 @@ enter number of what you want
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
@@ -109,21 +109,22 @@ enter number of what you want
     if type_of_petal == '3':
         print('How a theme is presaented in poetry \n')
 
-        name_of_poem = input('enter the name of the poem ...')
-        theme_presented = input('enter the theme shown ...')
-        theme_shown_through = input(f'how is {theme_presented} shown')
-        quote = input('enter quote you want to explode ...')
-        zoom_in_word = input('enter ther word you want to zoom in on ...')
-        wordclass = input('enter word class of word ...')
+        name_of_poem = input('enter the name of the poem ... ')
+        theme_presented = input('enter the theme shown ... ')
+        theme_shown_through = input(f'{theme_presented} is shown through a ... ')
+        quote = input('enter quote you want to explode ... ')
+        zoom_in_word = input('enter ther word you want to zoom in on ... ')
+        wordclass = input('enter word class of word ... ')
+        what_it_relates_to = input('how does this theme get presented by the word ... ')
 
-        petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s the {theme_presented} that is presented in the reader\'s headh showing how {theme_presented} is shown. ")
+        petal = (f"in the poem {name_of_poem} the theme of {theme_presented} is shown through {theme_shown_through} . This is evident in the quote \'{quote}\'. The {wordclass} \'{zoom_in_word}\' construct\'s how the theme of {theme_presented} is presented as it relates to {what_it_relates_to}")
 
 
 
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
 
-        end_decision = input('this has been written in paragraphs.txt or press c to copy and e to exit')
+        end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit')
         if end_decision == 'e':
             quit()
         if end_decision == 'c':
@@ -135,6 +136,7 @@ enter number of what you want
 ### WELCOME MESSEDGE ###
 ########################
 
+# just made this bit for some fun
 print('\nwelcome to English-Helper \nBy K972')
 time.sleep(3)
 start_countdown_number = 5
