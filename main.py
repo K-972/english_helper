@@ -163,7 +163,7 @@ enter number of what you want
 
         if what_the_character_is_in == 'extract':
 
-            petal = (f"in the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}")
+            petal = (f"in the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}")
 
         else:
 
