@@ -158,6 +158,7 @@ enter number of what you want
         what_the_text_is_called = input('what the text is called ... ')
         character_name = input('enter character name ... ')
         how_character_is_presented = input(f'{character_name} is presented as ... ')
+        quote = input('pick a quote that shows this ... ')
         how_it_is_shown = input(f'this quote shows {character_name}\'s {how_character_is_presented} because ... ')
 
         if what_the_character_is_in == 'extract':
