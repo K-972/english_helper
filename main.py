@@ -120,7 +120,7 @@ enter number of what you want
 
         context_option = input('do you want to input some context y/n >> ')
         if context_option == 'y':
-            context_prompt = 'This is contextually relevant as  '
+            context_prompt = 'This is contextually relevant as '
             context = input(f'{context_prompt}....   or type e to exit ... ')
             if context == 'e':
                 pass
@@ -154,12 +154,20 @@ enter number of what you want
 
     if type_of_peel == '1':
         print('source A\n')
-        what_the_character_is_in = input('is it a book poem or ... ')
+        what_the_character_is_in = input('is it a book, poem, extract or... ')
+        what_the_text_is_called = input('what the text is called ... ')
         character_name = input('enter character name ... ')
         how_character_is_presented = input(f'{character_name} is presented as ... ')
+        how_it_is_shown = input(f'this quote shows {character_name}\'s {how_character_is_presented} because ... ')
 
+        if what_the_character_is_in == 'extract':
 
-        petal = (f"in the {what_the_character_is_in} the character {character_name} is presented as {how_character_is_presented}")
+            petal = (f"in the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}")
+
+        else:
+
+            petal = (f"in the {what_the_character_is_in}, {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}")
+
 
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
