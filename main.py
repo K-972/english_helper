@@ -160,14 +160,16 @@ enter number of what you want
         how_character_is_presented = input(f'{character_name} is presented as ... ')
         quote = input('pick a quote that shows this ... ')
         how_it_is_shown = input(f'this quote shows {character_name}\'s {how_character_is_presented} because ... ')
+        what_this_shows_about = input(f'what this shows about {character_name} --just a few words-- ... ')
+        what_this_shows_about_as = input(f'This then shows {character_name}\'s {what_this_shows_about} as ... ')
 
         if what_the_character_is_in == 'extract':
 
-            petal = (f"in the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}")
+            petal = (f"In the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}. This then shows {character_name}\'s {what_this_shows_about} as {what_this_shows_about_as}.")
 
         else:
 
-            petal = (f"in the {what_the_character_is_in}, {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}")
+            petal = (f"In the {what_the_character_is_in}, {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}. This then shows {character_name}\'s {what_this_shows_about} as {what_this_shows_about_as}.")
 
 
         with open('paragraphs.txt', 'a') as f:
