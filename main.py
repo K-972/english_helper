@@ -153,13 +153,16 @@ enter number of what you want
   >> """)
 
     if type_of_peel == '1':
-        print('source A\n')
+        print('how a character is presented\n')
         what_the_character_is_in = input('is it a book poem or ... ')
         character_name = input('enter character name ... ')
         how_character_is_presented = input(f'{character_name} is presented as ... ')
+        quote = input('enter quote you want to explode ... ')
+        technique = input('enter technique to explore ... ')
 
 
-        petal = (f"in the {what_the_character_is_in} the character {character_name} is presented as {how_character_is_presented}")
+
+        petal = (f"in the {what_the_character_is_in} the character {character_name} is presented as {how_character_is_presented} which is shown the the use of {technique}. This is shown through the quote \'{quote}\'. This quote shows why {character_name} is presented this way")
 
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
@@ -169,6 +172,24 @@ enter number of what you want
             quit()
         if end_decision == 'c':
             pyperclip.copy(petal)
+
+    # if type_of_peel == '2':
+    #     print('how a theme is shown\n')
+    #     what_the_character_is_in = input('is it a book poem or ... ')
+
+    #     how_character_is_presented = input(f'{character_name} is presented as ... ')
+
+
+    #     petal = (f"")
+
+    #     with open('paragraphs.txt', 'a') as f:
+    #         f.write(petal)
+
+    #     end_decision = input('\nthis has been written in paragraphs.txt or press c to copy and e to exit >> ')
+    #     if end_decision == 'e':
+    #         quit()
+    #     if end_decision == 'c':
+    #         pyperclip.copy(petal)
 
 
 
