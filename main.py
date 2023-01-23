@@ -120,7 +120,7 @@ enter number of what you want
 
         context_option = input('do you want to input some context y/n >> ')
         if context_option == 'y':
-            context_prompt = 'This is contextually relevant as  '
+            context_prompt = 'This is contextually relevant as '
             context = input(f'{context_prompt}....   or type e to exit ... ')
             if context == 'e':
                 pass
@@ -153,16 +153,38 @@ enter number of what you want
   >> """)
 
     if type_of_peel == '1':
+<<<<<<< HEAD
         print('how a character is presented\n')
         what_the_character_is_in = input('is it a book poem or ... ')
         character_name = input('enter character name ... ')
         how_character_is_presented = input(f'{character_name} is presented as ... ')
         quote = input('enter quote you want to explode ... ')
         technique = input('enter technique to explore ... ')
+=======
+        print('source A\n')
+        what_the_character_is_in = input('is it a book, poem, extract or... ')
+        what_the_text_is_called = input('what the text is called ... ')
+        character_name = input('enter character name ... ')
+        how_character_is_presented = input(f'{character_name} is presented as ... ')
+        quote = input('pick a quote that shows this ... ')
+        how_it_is_shown = input(f'this quote shows {character_name}\'s {how_character_is_presented} because ... ')
+        what_this_shows_about = input(f'what this shows about {character_name} --just a few words-- ... ')
+        what_this_shows_about_as = input(f'This then shows {character_name}\'s {what_this_shows_about} as ... ')
+>>>>>>> 2606852c9413df0c02d7f85f927fda670af7ad13
 
+        if what_the_character_is_in == 'extract':
 
+            petal = (f"In the {what_the_character_is_in} from {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}. This then shows {character_name}\'s {what_this_shows_about} as {what_this_shows_about_as}.")
+
+        else:
+
+            petal = (f"In the {what_the_character_is_in}, {what_the_text_is_called} the character {character_name} is presented as {how_character_is_presented}. This is shown through the quote \'{quote}\', because {how_it_is_shown}. This then shows {character_name}\'s {what_this_shows_about} as {what_this_shows_about_as}.")
+
+<<<<<<< HEAD
 
         petal = (f"in the {what_the_character_is_in} the character {character_name} is presented as {how_character_is_presented} which is shown the the use of {technique}. This is shown through the quote \'{quote}\'. This quote shows why {character_name} is presented this way")
+=======
+>>>>>>> 2606852c9413df0c02d7f85f927fda670af7ad13
 
         with open('paragraphs.txt', 'a') as f:
             f.write(petal)
